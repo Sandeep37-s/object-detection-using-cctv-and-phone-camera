@@ -1,0 +1,6 @@
+# Local research / training folders (not part of the app)
+compare/
+datasets/
+docs/
+ultralytics/
+yolov5/

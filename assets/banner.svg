@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFB37A"/>
+      <stop offset="0.45" stop-color="#FF8A3D"/>
+      <stop offset="1" stop-color="#F24E1E"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.18" cy="0.35" r="0.45">
+      <stop offset="0" stop-color="#FFE3CC" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFE3CC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.85" cy="0.15" r="0.4">
+      <stop offset="0" stop-color="#FF5A1F" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FF5A1F" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="900" height="300" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="900" height="300" fill="url(#bg)"/>
+    <rect width="900" height="300" fill="url(#glow1)"/>
+    <rect width="900" height="300" fill="url(#glow2)"/>
+  </g>
+
+  <!-- Logo: detection box with corner brackets -->
+  <g transform="translate(300 26)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round">
+    <path d="M2 16 V2 H16"/><path d="M42 2 H56 V16"/>
+    <path d="M56 40 V54 H42"/><path d="M16 54 H2 V40"/>
+    <circle cx="29" cy="28" r="9" fill="#fff" stroke="none"/>
+  </g>
+  <text x="372" y="66" fill="#fff" font-size="44" font-weight="700" letter-spacing="0.5">YOLO Detector</text>
+  <text x="374" y="88" fill="#fff" font-size="15" font-weight="600" letter-spacing="3" opacity="0.92">YOLO26n · ON-DEVICE · FLUTTER</text>
+
+  <!-- Feature tiles -->
+  <g fill="#fff" fill-opacity="0.16" stroke="#fff" stroke-opacity="0.45" stroke-width="1.2">
+    <rect x="46"  y="118" width="190" height="104" rx="12"/>
+    <rect x="252" y="118" width="190" height="104" rx="12"/>
+    <rect x="458" y="118" width="190" height="104" rx="12"/>
+    <rect x="664" y="118" width="190" height="104" rx="12"/>
+  </g>
+
+  <!-- Tile 1: offline / shield -->
+  <path transform="translate(124 134)" d="M17 2 L32 8 V20 C32 30 25 37 17 40 C9 37 2 30 2 20 V8 Z M10 21 L15 26 L25 15"
+        fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="141" y="203" fill="#fff" font-size="17" text-anchor="middle">100% offline</text>
+
+  <!-- Tile 2: 80 classes / grid -->
+  <g transform="translate(322 138)" fill="#fff">
+    <rect x="0"  y="0"  width="14" height="14" rx="2"/><rect x="18" y="0"  width="14" height="14" rx="2"/><rect x="36" y="0"  width="14" height="14" rx="2"/>
+    <rect x="9"  y="18" width="14" height="14" rx="2"/><rect x="27" y="18" width="14" height="14" rx="2"/>
+  </g>
+  <text x="347" y="203" fill="#fff" font-size="17" text-anchor="middle">80 object classes</text>
+
+  <!-- Tile 3: phone + CCTV camera -->
+  <g transform="translate(522 134)" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="0" y="4" width="22" height="36" rx="4"/><path d="M8 34 H14"/>
+    <path d="M32 12 L56 6 L60 20 L36 26 Z"/><path d="M46 23 V36 H56"/>
+  </g>
+  <text x="553" y="203" fill="#fff" font-size="17" text-anchor="middle">Phone + CCTV</text>
+
+  <!-- Tile 4: real-time / bolt -->
+  <path transform="translate(744 132)" d="M20 2 L4 26 H17 L13 44 L30 18 H17 Z"
+        fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="759" y="203" fill="#fff" font-size="17" text-anchor="middle">Real-time ONNX</text>
+
+  <!-- Pill -->
+  <rect x="368" y="240" width="164" height="40" rx="20" fill="#fff" fill-opacity="0.12" stroke="#fff" stroke-width="1.5"/>
+  <text x="450" y="266" fill="#fff" font-size="18" text-anchor="middle">Download APK</text>
+</svg>
