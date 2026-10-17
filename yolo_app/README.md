@@ -1,6 +1,6 @@
-# yolo_detector
+# Dhruva OD
 
-A new Flutter project.
+On-device AI surveillance and object detection app.
 
 ## Getting Started
 

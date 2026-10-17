@@ -25,7 +25,7 @@ class YoloApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'YOLO Detector',
+      title: 'Dhruva OD',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorSchemeSeed: const Color(0xFF2563EB),
@@ -94,15 +94,76 @@ class _HomeScreenState extends State<HomeScreen> {
           builder: (context, _) => ListView(
             padding: const EdgeInsets.fromLTRB(20, 28, 20, 28),
             children: [
-              Text('YOLO Detector', style: theme.textTheme.headlineMedium!.copyWith(fontWeight: FontWeight.w800)),
-              const SizedBox(height: 4),
-              Text(
-                _loadError != null
-                    ? 'Model failed to load: $_loadError'
-                    : ready
-                        ? 'Nano model loaded · runs 100% on this device'
-                        : 'Loading model…',
-                style: TextStyle(color: _loadError != null ? Colors.redAccent : Colors.white60),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 58,
+                    height: 58,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0xFFD4AF37).withValues(alpha: 0.3),
+                          blurRadius: 18,
+                          spreadRadius: 2,
+                        ),
+                      ],
+                    ),
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Dhruva OD',
+                          style: theme.textTheme.headlineMedium!.copyWith(
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: -0.5,
+                          ),
+                        ),
+                        const SizedBox(height: 3),
+                        Row(
+                          children: [
+                            Container(
+                              width: 8,
+                              height: 8,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: _loadError != null
+                                    ? Colors.redAccent
+                                    : ready
+                                        ? const Color(0xFF10B981)
+                                        : Colors.amberAccent,
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            Expanded(
+                              child: Text(
+                                _loadError != null
+                                    ? 'Model error: $_loadError'
+                                    : ready
+                                        ? 'Nano model loaded · runs 100% on device'
+                                        : 'Loading model…',
+                                style: TextStyle(
+                                  color: _loadError != null ? Colors.redAccent : Colors.white60,
+                                  fontSize: 13,
+                                ),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(height: 28),
               _SourceCard(
