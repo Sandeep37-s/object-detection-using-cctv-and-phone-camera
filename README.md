@@ -1,7 +1,7 @@
 <div align="center">
   <p>
     <a href="https://github.com/Sandeep37-s/didactic-system/raw/master/YOLO_Detector.apk" target="_blank">
-      <img width="100%" src="assets/banner.svg" alt="YOLO Detector banner"></a>
+      <img width="100%" src="assets/banner.svg" alt="Object Detector banner"></a>
   </p>
 
 [Features](#-features) | [Download](#-download) | [Quick Start](#-quick-start) | [CCTV Setup](#-cctv-setup) | [Build from Source](#%EF%B8%8F-build-from-source) | [Project Structure](#-project-structure) | [How It Works](#-how-it-works)
