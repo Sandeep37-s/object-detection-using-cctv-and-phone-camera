@@ -23,13 +23,13 @@
   </g>
 
   <!-- Logo: detection box with corner brackets -->
-  <g transform="translate(300 26)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round">
+  <g transform="translate(230 26)" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round">
     <path d="M2 16 V2 H16"/><path d="M42 2 H56 V16"/>
     <path d="M56 40 V54 H42"/><path d="M16 54 H2 V40"/>
     <circle cx="29" cy="28" r="9" fill="#fff" stroke="none"/>
   </g>
-  <text x="372" y="66" fill="#fff" font-size="44" font-weight="700" letter-spacing="0.5">YOLO Detector</text>
-  <text x="374" y="88" fill="#fff" font-size="15" font-weight="600" letter-spacing="3" opacity="0.92">YOLO26n · ON-DEVICE · FLUTTER</text>
+  <text x="302" y="66" fill="#fff" font-size="42" font-weight="700" letter-spacing="0.5">Object Detection</text>
+  <text x="304" y="88" fill="#fff" font-size="15" font-weight="600" letter-spacing="3" opacity="0.92">YOLO26n · ON-DEVICE · FLUTTER</text>
 
   <!-- Feature tiles -->
   <g fill="#fff" fill-opacity="0.16" stroke="#fff" stroke-opacity="0.45" stroke-width="1.2">

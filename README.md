@@ -1,7 +1,7 @@
 <div align="center">
   <p>
-    <a href="https://github.com/Sandeep37-s/didactic-system/raw/master/YOLO_Detector.apk" target="_blank">
-      <img width="100%" src="assets/banner.svg" alt="Object Detector banner"></a>
+    <a href="https://github.com/Sandeep37-s/object-detection-using-cctv-and-phone-camera/raw/master/Object_Detection.apk" target="_blank">
+      <img width="100%" src="assets/banner.svg" alt="Object Detection banner"></a>
   </p>
 
 [Features](#-features) | [Download](#-download) | [Quick Start](#-quick-start) | [CCTV Setup](#-cctv-setup) | [Build from Source](#%EF%B8%8F-build-from-source) | [Project Structure](#-project-structure) | [How It Works](#-how-it-works)
@@ -12,12 +12,12 @@
 <a href="https://onnxruntime.ai"><img src="https://img.shields.io/badge/ONNX%20Runtime-on--device-005CED?logo=onnx&logoColor=white" alt="ONNX Runtime"></a>
 <a href="https://docs.ultralytics.com"><img src="https://img.shields.io/badge/Model-YOLO26n-FF6F00" alt="YOLO26n"></a>
 <br>
-<a href="https://github.com/Sandeep37-s/didactic-system/raw/master/YOLO_Detector.apk"><img src="https://img.shields.io/badge/Download-APK-F24E1E?style=for-the-badge&logo=android&logoColor=white" alt="Download APK"></a>
+<a href="https://github.com/Sandeep37-s/object-detection-using-cctv-and-phone-camera/raw/master/Object_Detection.apk"><img src="https://img.shields.io/badge/Download-APK-F24E1E?style=for-the-badge&logo=android&logoColor=white" alt="Download APK"></a>
 
 </div>
 <br>
 
-**YOLO Detector** is an Android app that runs real-time **object detection** fully on your phone. It uses the **YOLO26n** (nano) model through **ONNX Runtime**, and it can watch either the phone's own **camera** or a **CCTV / IP camera stream** (RTSP or HTTP). Nothing is uploaded: every frame is processed on the device, so it works without internet once the stream is reachable.
+**Object Detection** (packaged as **Dhruva OD**) is an Android app that runs real-time object detection fully on your phone. It uses the **YOLO26n** (nano) model through **ONNX Runtime**, and it can watch either the phone's own **camera** or a **CCTV / IP camera stream** (RTSP or HTTP). Nothing is uploaded: every frame is processed on the device, so it works without internet once the stream is reachable.
 
 It's built for simple home and site **surveillance**. Pick the objects you care about (people, vehicles, animals, and more from the 80 COCO classes), set a confidence threshold, and see live bounding boxes with the inference time for each frame.
 
@@ -40,7 +40,7 @@ Get the latest build directly:
 
 <div align="center">
 
-**[⬇️ Download YOLO_Detector.apk](https://github.com/Sandeep37-s/didactic-system/raw/master/YOLO_Detector.apk)**
+**[⬇️ Download Object_Detection.apk](https://github.com/Sandeep37-s/object-detection-using-cctv-and-phone-camera/raw/master/Object_Detection.apk)**
 
 </div>
 
@@ -49,7 +49,7 @@ Get the latest build directly:
 
 ## 🚀 Quick Start
 
-1. **Install** the APK and open **YOLO Detector**.
+1. **Install** the APK and open the app (**Dhruva OD**).
 2. Wait for the message *"Nano model loaded · runs 100% on this device"*.
 3. Choose a source:
    - **Phone camera**: point the camera at something and boxes appear live.
@@ -74,8 +74,8 @@ Enter your camera's stream URL when you tap **CCTV camera**. Use the **sub-strea
 **Requirements:** [Flutter SDK](https://docs.flutter.dev/get-started/install) (Dart ≥ 3.11), Android SDK, and a device or emulator.
 
 ```bash
-git clone https://github.com/Sandeep37-s/didactic-system.git
-cd didactic-system/yolo_app
+git clone https://github.com/Sandeep37-s/object-detection-using-cctv-and-phone-camera.git
+cd object-detection-using-cctv-and-phone-camera/yolo_app
 
 flutter pub get
 flutter run                  # run on a connected device
@@ -98,8 +98,8 @@ Replace `yolo_app/assets/yolo26n.onnx` with the new file. If your model uses dif
 ## 📂 Project Structure
 
 ```
-didactic-system/
-├── YOLO_Detector.apk          # Ready-to-install Android build
+object-detection-using-cctv-and-phone-camera/
+├── Object_Detection.apk          # Ready-to-install Android build
 ├── assets/banner.svg          # README banner
 └── yolo_app/                  # Flutter app
     ├── assets/
@@ -159,5 +159,5 @@ didactic-system/
 <br>
 Made with ❤️ by <a href="https://github.com/Sandeep37-s">Sandeep37-s</a>
 <br><br>
-<a href="https://github.com/Sandeep37-s/didactic-system/raw/master/YOLO_Detector.apk"><img src="https://img.shields.io/badge/Get%20the%20app-Download%20APK-F24E1E?style=for-the-badge&logo=android&logoColor=white" alt="Download APK"></a>
+<a href="https://github.com/Sandeep37-s/object-detection-using-cctv-and-phone-camera/raw/master/Object_Detection.apk"><img src="https://img.shields.io/badge/Get%20the%20app-Download%20APK-F24E1E?style=for-the-badge&logo=android&logoColor=white" alt="Download APK"></a>
 </div>
